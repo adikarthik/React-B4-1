@@ -1,0 +1,155 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 40px;
+}
+
+
+.services{
+  font-size: -0.5em;
+  font-family: "Poppins";
+  color: darkgrey;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  
+}
+
+.services::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #fd9042;
+  margin: 4px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 2px;
+  width: 363px;
+  height: 209px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 29px 0 rgb(68 88 144 / 16%);
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  font-size: larger;
+}
+
+.card:hover{
+  cursor: pointer;
+  box-shadow: 0 2px 29px 0 rgba(4, 5, 8, 0.256);
+
+}
+
+ .content {
+  margin-left: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #fd9042;
+  transition: ease-in-out 0.3s;
+}
+
+.description{
+  font-size: 14px;
+  font-weight: 200;
+} 
+
+
+/* PORTFOLIO  */
+
+
+.portfolio::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #fd9042;
+  margin: 4px;
+}
+
+.portfolio{
+  font-size: -0.5em;
+  font-family: "Poppins";
+  color: darkgrey;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  
+}
+
+
+.imageContainer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 15px;
+}
+
+.imageCard{
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 15px;
+}
+
+
+.img-fluid{
+    width: 100%;
+    height: max-content;
+}
+
+.img-fluid:hover{
+  transform: scale(1.2);
+  /* transition: transform 0.5s ease-in-out; */
+  transition: ease-in 0.4s;
+  cursor: pointer;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; 
+  background-color: #f0f0f0; 
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; 
+  transition: opacity 0.2s ease-in-out; 
+}
+
+.imageCard:hover .image-overlay {
+  opacity: 1; /* Overlay visible on hover */
+}
+
+.image-overlay p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.imageCard-container {
+  position: relative;  
+}
+
+.imageCard-container .image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: flex-end;  
+}
