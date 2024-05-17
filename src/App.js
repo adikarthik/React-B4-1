@@ -1,6 +1,5 @@
 import { Portfolio } from './components/Portfolio';
-import { Service } from './components/service';
-
+import { Service } from './components/Service';
 
 function App() {
   return (
@@ -12,3 +11,4 @@ function App() {
 }
 
 export default App;
+

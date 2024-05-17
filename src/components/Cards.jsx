@@ -22,7 +22,7 @@ const Cards = ({ title, iconPath, description, iconColor }) => {
         </div>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default Cards;

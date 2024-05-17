@@ -67,8 +67,9 @@ a:hover {
 } 
 
 
-/* PORTFOLIO  */
 
+
+/* PORTFOLIO  */
 
 .portfolio::after {
   content: "";
@@ -98,6 +99,10 @@ a:hover {
 .imageCard{
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 15px;
+  position: relative;
+  display: inline-block; /* Display images side-by-side */
+  width: 90%; 
+  margin: 5px; 
 }
 
 
@@ -115,18 +120,22 @@ a:hover {
 
 .image-overlay {
   position: absolute;
-  bottom: 0;
+  bottom: 0; 
   left: 0;
-  width: 100%;
-  height: 50px; 
-  background-color: #f0f0f0; 
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  height: 20%; 
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  opacity: 0; 
-  transition: opacity 0.2s ease-in-out; 
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  /* Text styling (optional): */
+  font-size: 16px;
+  font-weight: bold;
 }
+
 
 .imageCard:hover .image-overlay {
   opacity: 1; /* Overlay visible on hover */
@@ -141,15 +150,3 @@ a:hover {
   position: relative;  
 }
 
-.imageCard-container .image-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px; 
-  display: flex; 
-  justify-content: center; 
-  align-items: flex-end;  
-}
