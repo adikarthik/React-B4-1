@@ -1,5 +1,5 @@
 import React from 'react';
-import {teamData} from './TeamData';
+import { teamData } from './TeamData';
 import { FaTwitter, FaFacebookF, FaYoutube, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import './Team.css';
 
