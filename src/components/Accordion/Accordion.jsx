@@ -6,7 +6,7 @@ function Accordion({ data }) {
         setText(!text);
     }
 
-    return (
+    return(
         <div>
             <ul className='faq-list'>
                 <li>

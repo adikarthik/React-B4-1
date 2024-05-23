@@ -8,11 +8,9 @@ import './App.css';
 
 
 function App() {
-
-
   return (
     <div>
-      <BrowserRouter>
+       <BrowserRouter>
         <Routes>
           <Route path='/' element={<><LoginSignup /></>} />
           <Route path='/team' element={<><FAQ /><Team /><Footer /></>} />
@@ -23,5 +21,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

@@ -85,11 +85,6 @@ i.active {
   display: inline-block;
   transition: 0.6s;
 }
-
-/* .question p{
-    font-family:;
-  } */
-
 .hr-lines:after {
   content: " ";
   height: 2px;
