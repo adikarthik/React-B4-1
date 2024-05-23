@@ -16,8 +16,6 @@ function App() {
           <Route path='/team' element={<><FAQ /><Team /><Footer /></>} />
         </Routes>
       </BrowserRouter>
-
-
     </div>
   );
 }
